@@ -1,0 +1,52 @@
+<ul>
+<h1> Name </h1>
+<div>
+<li *ngFor="let user of users">
+  {{ user.name }}
+</li>
+</div>
+
+<h1> UserName </h1>
+<div class="padding">
+<li *ngFor="let user of users">
+{{ user.username }}
+</li>
+</div>
+
+<h1> E-mail </h1>
+<div class="padding1">
+<li *ngFor="let user of users">
+{{ user.email }}
+</li>
+</div>
+
+<h1> Address</h1>
+<div class="padding1">
+<li *ngFor="let user of users">
+<span>Street: {{ user.address.street }}</span> <br>
+<span>Suite: {{ user.address.suite }}</span> <br>
+<span>City: {{ user.address.city }}</span> <br>
+<span>Zip-Code: {{ user.address.zipcode }}</span><br>
+<span> Geo: </span> <br>
+<span>Latitude : {{ user.address.geo.lat }}</span> <br>
+<span>Longitude : {{ user.address.geo.lng }}</span> <br>
+</li>
+</div>
+
+<h1> Phone </h1>
+<div class="padding1">
+<li *ngFor="let user of users">
+{{ user.phone }}
+</li>
+</div>
+
+<h1> Company</h1>
+<div class="padding1">
+<li *ngFor="let user of users">
+<span>Name: {{ user.company.name }}</span> <br>
+<span>CatchPhrase: {{ user.company.catchPhrase  }}</span> <br>
+<span>BS: {{ user.company.bs }}</span> <br>
+</li>
+</div>
+
+</ul>

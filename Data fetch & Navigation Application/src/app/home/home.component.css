@@ -1,0 +1,10 @@
+.padding {
+  font-family: Lato;
+  margin-top: 5%;
+}
+
+.padding1 {
+  font-family: Lato;
+  margin-top: 5%;
+  display: flexbox;
+}

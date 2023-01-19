@@ -1,0 +1,28 @@
+<header>
+  <nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink="/"
+        >
+          User Information</a
+        >
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/about"
+          >About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/contact"
+          >Contact</a
+        >
+      </li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+</header>
